@@ -1,0 +1,97 @@
+body{
+    background: url("../assets/imagenParqueo.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 0;
+}
+.logoCato{
+    background: darkslategrey;
+    padding: 10px;
+}
+
+.logoCato .container h1{
+    color: white;
+    float: left;
+}
+
+.logoCato .container p{
+    color: white;
+    float: left;
+}
+
+#fotoparqueo img{
+    height: 100px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+}
+.container{
+    overflow: hidden;
+}
+.seccionPrincipal{
+    margin-top: 10%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.modal-content{
+    background-color: white;
+    padding: 0;
+    box-shadow: 0px 0px 2px darkslategrey;
+
+}
+
+#botonIngresar{
+    width: 150px;
+    margin-bottom: 20px;
+    background: #1a2537;
+    border-color: white;
+}
+#botonIngresar:hover{
+    background: cadetblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#textoPrincipal h1{
+
+    color: #1a2537;
+    font-size: 30px;
+}
+
+.grid-container{
+    width: 360px;
+    display: grid;
+    grid-template-columns: auto;
+    cursor: pointer;
+    margin: 20px auto;
+    float: left;
+
+}
+
+.grid-container:hover{
+    transform: scale(1.15);
+
+}
+
+.grid-item{
+    background: url("../assets/imagen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    width: 200px;
+    margin: 0 auto;
+    height: 100px;
+    border-radius: 15px 15px 0 0;
+    margin-top: 30px;
+    box-shadow: -1px 5px 19px 8px rgba(0,0,0,0.9);
+}
+.grid-item2{
+    width: 200px;
+    padding: 20px;
+    background: #FEFEFE;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: -1px 5px 19px 8px rgba(0,0,0,0.9);
+}

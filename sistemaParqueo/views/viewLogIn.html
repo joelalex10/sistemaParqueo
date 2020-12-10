@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="{% static "styles/styleLogIn.css" %}">
+
+</head>
+<body>
+
+    <div class="modal-dialog">
+        <div class="col-sm-24 seccionPrincipal">
+            <div class="modal-content text-center" >
+                <form method="get" action="menuPrincipal/" method="GET ">
+
+                    <div class="col-12 logoCato text-right">
+                        <select name="tipo_usuario">
+                            {% for tipos in tipo_Usuarios %}
+                                <option>{{ tipos.tipo }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="col-12 text-center" id="fotoparqueo">
+                        <img src="../static/assets/logoParqueo.png"/>
+                    </div>
+
+                    <div class="col-12 text-center" id="textoPrincipal">
+                        <h1>Sistema de Parqueos</h1>
+                    </div>
+
+                    <div class="col-12 text-center form-group" id="usuario">
+                        <input id="txtUsuario" type="text" class="form-control " placeholder="Nombre de usuario" name="username"/>
+                    </div>
+                    <div class="col-12 text-center form-group" id="contrasena">
+                        <input id="txtContrasena" type="password" class="form-control" placeholder="Contrasena" name="password"/>
+                    </div>
+                    <button type="submit" class="btn btn-primary " id="botonIngresar"><i class="fas fa-sign-in-alt"></i>  INGRESAR </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

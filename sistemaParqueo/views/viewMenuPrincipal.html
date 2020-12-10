@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal - ADM</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="{% static "styles/styleMenuPrincipal.css" %}">
+</head>
+<body>
+        <!--col-sm-24 -->
+        <div class="seccionPrincipal">
+            <div class="modal-content text-center" >
+
+                <div class="col-12 logoCato text-right">
+                    <div class="container">
+                        <h1>MENU ADMINISTRADOR</h1>
+                        <p>Bienvenido: {{ mensaje }}</p>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div type="" class="grid-container" action="saludo/">
+                        <div class="grid-item"></div>
+                        <div class="grid-item2">
+                            <h2>Reporte de Caja</h2>
+                        </div>
+                    </div>
+
+                    <div class="grid-container">
+                        <div class="grid-item"></div>
+                        <div class="grid-item2">
+                            <h2>Control de Empleados</h2>
+                        </div>
+                    </div>
+
+                    <div class="grid-container">
+                        <div class="grid-item"></div>
+                        <div class="grid-item2">
+                            <h2>Reporte de Alquileres</h2>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="container">
+
+                    <div class="grid-container">
+                        <div class="grid-item"></div>
+                        <div class="grid-item2">
+                            <h2>Historial de Ubicacion</h2>
+                        </div>
+                    </div>
+
+                    <div class="grid-container">
+                        <div class="grid-item"></div>
+                        <div class="grid-item2">
+                            <h2>Añadir Usuario</h2>
+                        </div>
+                    </div>
+
+                    <div class="grid-container">
+                        <div class="grid-item"></div>
+                        <div class="grid-item2">
+                            <h2>Gestion de Tarifas</h2>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+</body>
+</html>
