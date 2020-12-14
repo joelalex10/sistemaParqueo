@@ -14,7 +14,6 @@ def controlLogIn(request):
         password = request.GET['password']
         tipo = request.GET['tipo_usuario']
         mensaje = "%s %s" % (request.GET['username'],  tipo)
-
     else:
         mensaje = "DEBES LLENAR SUS DATOS"
     ctx = {"mensaje":mensaje}

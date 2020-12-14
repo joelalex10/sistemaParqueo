@@ -13,15 +13,26 @@ Class-based views
 Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+
+Para arrancar el proyecto
+http://127.0.0.1:8000/
 """
 from django.contrib import admin
 from django.urls import path
 
 from sistemaParqueo.controllers import controllerLogIn, controllerReporteCaja
+from sistemaParqueo.controllers import controllerMenuAdmin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',controllerLogIn.mostrarLogin),
-    path('menuPrincipal/',controllerLogIn.controlLogIn),
+    path('menuAdministrador/',controllerLogIn.controlLogIn),
     path('registroCaja/',controllerReporteCaja.activarReporteCaja),
+    path('menuAdministrador/controlPersonal/', controllerMenuAdmin.mostrarControlPersonal, name="ADMcontrolPersonal"),
+    path('menuAdministrador/reporteUbicacion/', controllerMenuAdmin.mostrarReporteUbicacion, name="ADMreporteUbicacion"),
+    path('menuAdministrador/nuevoUsuario/', controllerMenuAdmin.mostrarNuevoUsuario,name="ADMnuevoUsuario"),
+    path('menuAdministrador/gestionTarifas/', controllerMenuAdmin.mostrarGestionTarifas, name="ADMgestionTarifas"),
+    path('menuAdministrador/reporteCaja/', controllerMenuAdmin.mostrarReporteCaja, name="ADMreporteCaja"),
+    path('menuAdministrador/reporteAlquileres/', controllerMenuAdmin.mostrarReporteAlquileres, name="ADMreporteAlquileres"),
+
 ]

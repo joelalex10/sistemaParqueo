@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Tarifas</title>
+
+    <link rel="stylesheet" href="{% static "styles/styleGestionDeTarifas.css" %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+</head>
+<body>
+
+    <div class="modal-dialog-scrollable">
+        <div class="col-sm-24 seccionPrincipal">
+            <div class="modal-content text-center" >
+
+                <div class="barra-principal">
+
+                    <div class="container-barra">
+                        <h1 >GESTION DE TARIFAS</h1>
+                        <p class="text-right texto-usuario">Usuario: Juan Perez</p>
+                    </div>
+
+                    <button class="btn btn-primary" id="boton-cerrar-sesion"><i class="fas fa-sign-in-alt"></i>Cerrar Sesion</button>
+                </div>
+                <div class="contenido-principal">
+
+                    <div class="text-anadir-tarifa">
+                        <h2 >AÑADIR NUEVA TARIFA</h2>
+                    </div>
+
+                    <div class="tarifa-container">
+                        <form>
+                            <label class="h5 label-tiempo">Tiempo</label>
+                            <input type="number" name="" id="input-number" value="1" min="1">
+
+                            <select name="tipo_tiempo" class="combo-tipo-tiempo">
+                                <option>HORAS</option>
+                                <option>DIAS</option>
+                                <option>MESES</option>
+                            </select>
+                            <label class="h5 label-precio">Precio</label>
+                            <input type="number" name="" id="input-precio">
+                            <label class="h5">Bs.</label>
+                        </form>
+
+                    </div>
+
+                    <div class="botones-tarifa">
+                        <button class="btn btn-primary" id="boton-agregar"><i class="fas fa-sign-in-alt"></i>AGREGAR</button>
+                    </div>
+
+                    <div class="text-anadir-tarifa">
+                        <h2 >REPORTE DE TARIFAS</h2>
+                    </div>
+
+
+                    <div>
+                        <div class="table-container">
+                            <table class="table table-fixed table-sm table-border">
+                                <thead class="table-dark">
+                                <tr>
+                                    <th style="width: 50px" scope="col">#</th>
+                                    <th style="width: 100px" scope="col">TIEMPO</th>
+                                    <th style="width: 100px" scope="col">PRECIO</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td style="width: 50px" >1</td>
+                                    <td style="width: 100px" >2 dias </td>
+                                    <td style="width: 100px" >20 Bs</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 50px" >1</td>
+                                    <td style="width: 100px" >2 dias </td>
+                                    <td style="width: 100px" >20 Bs</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 50px" >1</td>
+                                    <td style="width: 100px" >2 dias </td>
+                                    <td style="width: 100px" >20 Bs</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 50px" >1</td>
+                                    <td style="width: 100px" >2 dias </td>
+                                    <td style="width: 100px" >20 Bs</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 50px" >1</td>
+                                    <td style="width: 100px" >2 dias </td>
+                                    <td style="width: 100px" >20 Bs</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 50px" >1</td>
+                                    <td style="width: 100px" >2 dias </td>
+                                    <td style="width: 100px" >20 Bs</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 50px" >1</td>
+                                    <td style="width: 100px" >2 dias </td>
+                                    <td style="width: 100px" >20 Bs</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 50px" >1</td>
+                                    <td style="width: 100px" >2 dias </td>
+                                    <td style="width: 100px" >20 Bs</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 50px" >1</td>
+                                    <td style="width: 100px" >2 dias </td>
+                                    <td style="width: 100px" >20 Bs</td>
+                                </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="fondo">
+                        <button class="btn btn-primary" id="boton-atras"><i class="fas fa-sign-in-alt"></i>ATRAS</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Tarifas</title>
+
+    <link rel="stylesheet" href="{% static "styles/styleNuevoUsuario.css" %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+</head>
+<body>
+
+<div class="modal-dialog-scrollable">
+    <div class="col-sm-24 seccionPrincipal">
+        <div class="modal-content text-center" >
+
+            <div class="barra-principal">
+
+                <div class="container-barra">
+                    <h1 >NUEVO USUARIO</h1>
+                    <p class="text-right texto-usuario">Usuario: Juan Perez</p>
+                </div>
+
+                <button class="btn btn-primary" id="boton-cerrar-sesion"><i class="fas fa-sign-in-alt"></i>Cerrar Sesion</button>
+            </div>
+            <div class="contenido-principal">
+
+                <div class="usuario-container text-left">
+                    <form>
+                        <div class="form-container">
+                            <label class="h5 label-form">Carnet de Identidad</label>
+                            <div class="col-12 text-center form-group" id="ci">
+                                <input id="txtCi" type="text" class="form-control " placeholder="Ingrese el carnet de identidad" name="username"/>
+                            </div>
+                        </div>
+
+                        <div class="form-container">
+                            <label class="h5 label-form">Nombres</label>
+                            <div class="col-12 text-center form-group" id="nombres">
+                                <input id="txtNombre" type="text" class="form-control " placeholder="Ingrese el nombre completo" name="username"/>
+                            </div>
+                        </div>
+
+                        <div class="form-container">
+                            <label class="h5 label-form">Contraseña</label>
+                            <div class="col-12 text-center form-group" id="contrasena">
+                                <input id="txtContrasena" type="text" class="form-control " placeholder="Ingrese la contraseña" name="username"/>
+                            </div>
+                        </div>
+
+                        <div class="form-container">
+                            <label class="h5 label-form">Confirmacion de  Contraseña</label>
+                            <div class="col-12 text-center form-group" id="repeat-contrasena">
+                                <input id="txtRepeatContrasena" type="text" class="form-control " placeholder="Vuelva a escribir la contraseña" name="username"/>
+                            </div>
+                        </div>
+
+                        <div class="form-container">
+                            <label class="h5 label-form">Telefono</label>
+                            <div class="col-12 text-center form-group" id="usuario">
+                                <input id="txtUsuario" type="text" class="form-control " placeholder="Ingrese el telefono" name="username"/>
+                            </div>
+                        </div>
+
+                        <div class="buttons-action">
+                            <button type="submit" class="btn btn-primary " id="botonIngresar"><i class="fas fa-sign-in-alt"></i>  REGISTRAR </button>
+                            <!--
+                            <button type="submit" class="btn btn-primary " id="botonModificar"><i class="fas fa-sign-in-alt"></i>  MODIFICAR </button>
+
+                            -->
+                            <button class="btn btn-primary " id="botonLimpiar"><i class="fas fa-sign-in-alt"></i>  LIMPIAR </button>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</body>
+</html>

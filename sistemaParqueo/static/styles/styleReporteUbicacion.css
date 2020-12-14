@@ -160,18 +160,10 @@ body{
     border-bottom-width: 0;
 }
 .table-container{
+    width: 1220px;
     border: black;
-    margin-left: 125px;
-    margin-right: 125px;
+    margin-left: 23px;
 }
-
-
-.table-total-container{
-    border: black;
-    margin-left: 500px;
-    margin-right: 125px;
-}
-
 .table-title{
     background: #1a2537;
 }

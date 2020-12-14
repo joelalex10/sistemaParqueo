@@ -2,43 +2,39 @@ body{
     background: url("../assets/imagenParqueo.jpeg") no-repeat center center fixed;
     background-size: cover;
     padding: 0;
-
 }
 .logoCato{
     background: darkslategrey;
-    padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
 }
 .logoCato select{
-    border: darkslategrey;
+    border: #1a2537;
 
 }
 #fotoparqueo img{
     height: 100px;
     border-radius: 15px;
     margin-bottom: 20px;
-
 }
-
 .seccionPrincipal{
+    line-height: 40px;
     margin: 0 auto;
     margin-top: 10%;
     padding: 0;
-
 }
-
 .modal-content{
     background-color: white;
     padding: 0;
     box-shadow: 0px 0px 2px darkslategrey;
-
 }
-
 .form-group input{
     margin-top: 25px;
     height: 42px;
-    width: 400px;
+    width: 460px;
+    color: dimgray;
     padding-left: 54px;
+    border-color: #0f6674;
     border-radius: 7px;
 }
 .form-group::before{
@@ -47,11 +43,9 @@ body{
     left: 28px;
     font-size: 22px;
     padding-top:4px;
-
 }
 .form-group#usuario::before{
     content: "\f007";
-
 }
 .form-group#contrasena::before{
     content: "\f023";
@@ -65,9 +59,7 @@ body{
 #botonIngresar:hover{
     background: cadetblue;
 }
-
 #textoPrincipal h1{
-
     color: #1a2537;
     font-size: 30px;
 }

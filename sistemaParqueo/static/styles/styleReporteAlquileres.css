@@ -13,12 +13,11 @@ body{
 }
 
 .seccionPrincipal{
-
     line-height: 40px;
     margin: 0 auto;
     margin-top: 5%;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 
 }
 .modal-content{
@@ -49,6 +48,7 @@ body{
 .barra-principal #boton-cerrar-sesion{
     cursor: pointer;
     width: 150px;
+    margin-left: 980px;
     background: darkred;
     border-color: white;
 
@@ -65,16 +65,6 @@ body{
 
 }
 
-.date-search{
-    float: left;
-    margin-left: 25px;
-    margin-right: 50px;
-
-}
-.date-search input{
-    height: 40px;
-    width: 180px;
-}
 .search-box{
     float: left;
     margin-right: 50px;
@@ -102,10 +92,7 @@ body{
     content: "\f2bb";
 
 }
-.container-filters-components h5{
-    margin-top: 10px;
-    float: left;
-}
+
 
 .container-filters-components input{
     float: left;
@@ -117,13 +104,7 @@ body{
     margin-left: 25px;
     margin-top: 25px;
 }
-.select-type{
-    float: left;
 
-    margin-top: 25px;
-    height: 42px;
-    width: 300px;
-}
 .search-button-align{
     margin-left: 50px;
     height: 42px;
@@ -133,12 +114,13 @@ body{
 #boton-buscar{
     cursor: pointer;
     width: 150px;
-
-    margin-left: 20px;
+    margin-left: 10px;
     background: darkslategrey;
     border-color: white;
 
 }
+
+
 #boton-buscar:hover{
     background: cadetblue;
 }
@@ -161,17 +143,9 @@ body{
 }
 .table-container{
     border: black;
-    margin-left: 125px;
-    margin-right: 125px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-
-
-.table-total-container{
-    border: black;
-    margin-left: 500px;
-    margin-right: 125px;
-}
-
 .table-title{
     background: #1a2537;
 }
@@ -179,13 +153,28 @@ body{
 #boton-atras{
     cursor: pointer;
     width: 150px;
-    margin-left: 1000px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: 600px;
     background: #1a2537;
     border-color: white;
+    float: left;
 
 }
 #boton-atras:hover{
     background: cadetblue;
+}
+#boton-alquiler{
+    cursor: pointer;
+    width: 250px;
+    float: left;
+    background: #1c7430;
+    border-color: white;
+}
+
+#boton-alquiler:hover{
+    background: cadetblue;
+}
+.button-container{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
 }

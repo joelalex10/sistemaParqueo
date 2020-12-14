@@ -1,0 +1,129 @@
+body{
+    background: url("../assets/imagenParqueo.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 0;
+
+}
+
+.barra-principal{
+    background: darkslategrey;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.seccionPrincipal{
+
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-left: 350px;
+    margin-right: 350px;
+
+}
+
+.modal-content{
+    background-color: white;
+    padding: 0;
+    box-shadow: 0px 0px 2px darkslategrey;
+    alignment: center;
+    margin-bottom: 50px;
+
+}
+.contenido-principal{
+    margin-bottom: 20px;
+
+}
+.container-barra{
+    overflow: hidden;
+    margin-bottom: -20px;
+}
+.container-barra h1{
+    float: left;
+    margin-top: 10px;
+    color: white;
+}
+
+.container-barra .texto-usuario{
+    margin-right: 20px;
+    color: white;
+}
+.barra-principal #boton-cerrar-sesion{
+    cursor: pointer;
+    width: 150px;
+    background: darkred;
+    border-color: white;
+
+}
+.barra-principal #boton-cerrar-sesion:hover{
+    background: cadetblue;
+}
+
+.barra-principal #boton-cerrar-sesion{
+    margin-left: 475px;
+}
+
+
+.text-anadir-tarifa{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.tarifa-container .label-tiempo{
+    margin-right: 10px;
+}
+.tarifa-container #input-number{
+    width: 50px;
+}
+.tarifa-container .label-precio{
+    margin-right: 10px;
+    margin-left: 80px;
+}
+
+.tarifa-container #input-precio{
+    width: 80px;
+}
+
+.tarifa-container{
+    margin-bottom: 20px;
+}
+
+.botones-tarifa #boton-agregar{
+    background-color: darkgreen;
+}
+.botones-tarifa{
+    margin-bottom: 30px;
+}
+
+.combo-tipo-tiempo{
+    height: 45px;
+}
+.table-fixed tbody{
+    height: 230px;
+    overflow-y: auto;
+    width: 100%;
+}
+.table-fixed thead,
+.table-fixed tbody,
+.table-fixed td,
+.table-fixed th{
+    display: block;
+}
+
+.table-fixed tbody td,
+.table-fixed thead >tr > th{
+    float: left;
+    border-bottom-width: 0;
+}
+.table-container{
+    border: black;
+    text-align: center;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+.table-title{
+    background: #1a2537;
+}
+.fondo #boton-atras{
+    background: darkslategrey;
+    margin-left: 500px;
+}

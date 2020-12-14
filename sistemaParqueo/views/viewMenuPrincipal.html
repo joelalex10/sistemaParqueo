@@ -4,79 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Principal - ADM</title>
+    <title>Menu Administrador</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
-    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <link rel="stylesheet" href="{% static "styles/styleMenuPrincipal.css" %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
 </head>
 <body>
-        <!--col-sm-24 -->
-        <div class="seccionPrincipal">
-            <div class="modal-content text-center" >
 
-                <div class="col-12 logoCato text-right">
-                    <div class="container">
-                        <h1>MENU ADMINISTRADOR</h1>
-                        <p>Bienvenido: {{ mensaje }}</p>
-                    </div>
-
+<div class="modal-dialog-scrollable">
+    <div class="col-sm-24 seccionPrincipal">
+        <div class="modal-content text-center" >
+            <div class="barra-principal">
+                <div class="container-barra">
+                    <h1 >MENU ADMINISTRADOR</h1>
+                    <p class="text-right texto-usuario">Usuario: Juan Perez</p>
                 </div>
+
+                <button class="btn btn-primary" id="boton-cerrar-sesion"><i class="fas fa-sign-in-alt"></i>Cerrar Sesion</button>
+            </div>
+            <div class="contenido-principal">
                 <div class="container">
                     <div type="" class="grid-container" action="saludo/">
-                        <div class="grid-item"></div>
+                        <div class="grid-item ">
+                        </div>
                         <div class="grid-item2">
-                            <h2>Reporte de Caja</h2>
+                            <h3>Reporte de Caja</h3>
+                            <a href="{% url 'ADMreporteCaja' %}">
+                                <button class="btn btn-primary " id="botonIngresar"><i class="fas fa-sign-in-alt"></i>  INGRESAR </button>
+                            </a>
                         </div>
                     </div>
 
                     <div class="grid-container">
                         <div class="grid-item"></div>
                         <div class="grid-item2">
-                            <h2>Control de Empleados</h2>
+                            <h3>Control de Empleados</h3>
+                            <a href="{% url 'ADMcontrolPersonal' %}">
+                                <button type="submit" class="btn btn-primary" id="botonIngresar"><i class="fas fa-sign-in-alt"></i>  INGRESAR </button>
+                            </a>
                         </div>
                     </div>
 
                     <div class="grid-container">
                         <div class="grid-item"></div>
                         <div class="grid-item2">
-                            <h2>Reporte de Alquileres</h2>
+                            <h3>Reporte de Alquileres</h3>
+                            <a href="{% url 'ADMreporteAlquileres' %}">
+                                <button type="submit" class="btn btn-primary " id="botonIngresar"><i class="fas fa-sign-in-alt"></i>  INGRESAR </button>
+                            </a>
                         </div>
                     </div>
                 </div>
-
-
-
                 <div class="container">
 
                     <div class="grid-container">
                         <div class="grid-item"></div>
                         <div class="grid-item2">
-                            <h2>Historial de Ubicacion</h2>
+                            <h3>Historial de Ubicacion</h3>
+                            <a href="{% url 'ADMreporteUbicacion' %}">
+                                <button type="submit" class="btn btn-primary " id="botonIngresar"><i class="fas fa-sign-in-alt"></i>  INGRESAR </button>
+                            </a>
+
                         </div>
                     </div>
 
                     <div class="grid-container">
                         <div class="grid-item"></div>
                         <div class="grid-item2">
-                            <h2>Añadir Usuario</h2>
+                            <h3>Añadir Usuario</h3>
+                            <a href="{% url 'ADMnuevoUsuario' %}">
+                                <button type="submit" class="btn btn-primary " id="botonIngresar"><i class="fas fa-sign-in-alt"></i>  INGRESAR </button>
+                            </a>
+
                         </div>
                     </div>
 
                     <div class="grid-container">
                         <div class="grid-item"></div>
                         <div class="grid-item2">
-                            <h2>Gestion de Tarifas</h2>
+                            <h3>Gestion de Tarifas</h3>
+                            <a href="{% url 'ADMgestionTarifas' %}">
+                                <button type="submit" class="btn btn-primary " id="botonIngresar"><i class="fas fa-sign-in-alt"></i>  INGRESAR </button>
+                            </a>
+
+
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
 </body>
 </html>

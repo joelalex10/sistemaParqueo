@@ -64,25 +64,15 @@ body{
     color: white;
 
 }
-
-.date-search{
-    float: left;
-    margin-left: 25px;
-    margin-right: 50px;
-
-}
-.date-search input{
-    height: 40px;
-    width: 180px;
-}
 .search-box{
     float: left;
     margin-right: 50px;
 }
 
 .search-box input{
+    margin-top: 25px;
     height: 42px;
-    width: 300px;
+    width: 260px;
 
     margin-left: 20px;
     color: dimgray;
@@ -91,9 +81,10 @@ body{
     border-radius: 7px;
 }
 .search-box::before{
+    margin-top: 25px;
     font-family: "Font Awesome\ 5 Free";
     position: absolute;
-    margin-left: 30px;
+    left: 28px;
     font-size: 22px;
     padding-top:4px;
 
@@ -102,23 +93,12 @@ body{
     content: "\f2bb";
 
 }
-.container-filters-components h5{
-    margin-top: 10px;
-    float: left;
-}
 
-.container-filters-components input{
-    float: left;
-
-}
 .container-filters-components{
     overflow: hidden;
     margin-bottom: 20px;
-    margin-left: 25px;
-    margin-top: 25px;
 }
 .select-type{
-    float: left;
 
     margin-top: 25px;
     height: 42px;
@@ -126,6 +106,7 @@ body{
 }
 .search-button-align{
     margin-left: 50px;
+    margin-top: -4px;
     height: 42px;
     width: 200px;
 }
@@ -160,18 +141,10 @@ body{
     border-bottom-width: 0;
 }
 .table-container{
+    width: 1220px;
     border: black;
-    margin-left: 125px;
-    margin-right: 125px;
+    margin-left: 23px;
 }
-
-
-.table-total-container{
-    border: black;
-    margin-left: 500px;
-    margin-right: 125px;
-}
-
 .table-title{
     background: #1a2537;
 }

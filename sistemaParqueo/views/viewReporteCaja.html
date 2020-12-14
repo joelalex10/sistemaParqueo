@@ -1,25 +1,113 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Reporte de Caja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Ubicacion</title>
+
+    <link rel="stylesheet" href="{% static "styles/styleReporteCaja.css" %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+
 
 </head>
 <body>
-    <div class="regform">
-        <h1>REPORTE DE CAJA</h1>
-    </div>
 
-    <div class="mane">
-        <form>
-            <div id="name">
-                <h2>Name</h2>
-                <input class="firstname" type="text"><br>
+<div class="seccionPrincipal">
+    <div class="modal-content">
+
+        <div class="barra-principal">
+
+            <div class="container-barra">
+                <h1 >REPORTE DE CAJA</h1>
+                <p class="text-right texto-usuario">Usuario: Juan Perez</p>
+            </div>
+            <button class="btn btn-primary" id="boton-cerrar-sesion"><i class="fas fa-sign-in-alt"></i>Cerrar Sesion</button>
+        </div>
+
+        <div class="contenido-principal">
+
+            <div class="container-filters-components">
+                <h5>Ingrese una fecha</h5>
+
+                <div class="date-search" id="date-search">
+                    <input type="date" placeholder="Ingrese el numero de placa">
+                </div>
+
+                <h5>Ingrese un mes</h5>
+
+                <div class="date-search" id="date-search">
+                    <input type="month" placeholder="Ingrese el numero de placa">
+                </div>
+
+                <button class="btn btn-primary search-button-align" id="boton-buscar"><i class="fas fa-search"></i>BUSCAR</button>
 
             </div>
-        </form>
+
+            <div>
+                <div class="table-container">
+                    <table class="table table-fixed table-sm table-border ">
+                        <thead class="table-dark">
+                        <tr >
+                            <th style="width: 200px" scope="col">DIA</th>
+                            <th style="width: 200px" scope="col">EMPLEADO</th>
+                            <th style="width: 200px" scope="col">MONTO APERTURA</th>
+                            <th style="width: 200px" scope="col">MONTO REPORTADO</th>
+                            <th style="width: 100px" scope="col">DIFERENCIA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td style="width: 200px" >11-10-20</td>
+                            <td style="width: 200px" > Javier Mascherano</td>
+                            <td style="width: 200px" > 100 Bs</td>
+                            <td style="width: 200px" >100 Bs</td>
+                            <td style="width: 100px"  >0 Bs</td>
+                        </tr>
+
+
+
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <div class="table-total-container">
+                    <table class="table table-fixed table-sm table-border ">
+                        <thead class="table-dark">
+                        <tr >
+                            <th style="width: 200px" scope="col">TOTAL APERTURA</th>
+                            <th style="width: 200px" scope="col">TOTAL REPORTADO</th>
+                            <th style="width: 100px" scope="col">DIFERENCIAS</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td style="width: 200px" >11-10-20</td>
+                            <td style="width: 200px" > 100 Bs</td>
+                            <td style="width: 100px" >100 Bs</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+            <button class="btn btn-primary search-button-align" id="boton-atras"><i class="fas fa-sign-out-alt"></i>ATRAS</button>
+
+        </div>
     </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
 </body>
 </html>
+

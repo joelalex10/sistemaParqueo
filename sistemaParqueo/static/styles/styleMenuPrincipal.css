@@ -2,79 +2,76 @@ body{
     background: url("../assets/imagenParqueo.jpeg") no-repeat center center fixed;
     background-size: cover;
     padding: 0;
+
 }
-.logoCato{
+
+.barra-principal{
     background: darkslategrey;
+    margin-bottom: 10px;
     padding: 10px;
 }
 
-.logoCato .container h1{
-    color: white;
-    float: left;
-}
-
-.logoCato .container p{
-    color: white;
-    float: left;
-}
-
-#fotoparqueo img{
-    height: 100px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-
-}
-.container{
-    overflow: hidden;
-}
 .seccionPrincipal{
-    margin-top: 10%;
-    margin-left: 50px;
-    margin-right: 50px;
-}
 
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
 .modal-content{
     background-color: white;
     padding: 0;
     box-shadow: 0px 0px 2px darkslategrey;
+    alignment: center;
+    margin-bottom: 50px;
 
 }
+.contenido-principal{
 
-#botonIngresar{
+}
+.container-barra{
+    overflow: hidden;
+    margin-bottom: -20px;
+}
+.container-barra h1{
+    float: left;
+    margin-top: 10px;
+    color: white;
+}
+.container-barra .texto-usuario{
+    margin-right: 20px;
+    color: white;
+}
+.barra-principal #boton-cerrar-sesion{
+    margin-left: 950px;
+}
+.barra-principal #boton-cerrar-sesion{
+    cursor: pointer;
     width: 150px;
-    margin-bottom: 20px;
-    background: #1a2537;
+    background: darkred;
     border-color: white;
+
 }
-#botonIngresar:hover{
+.barra-principal #boton-cerrar-sesion:hover{
     background: cadetblue;
 }
-*{
-    margin: 0;
-    padding: 0;
+.container{
+    overflow: hidden;
 }
-
-#textoPrincipal h1{
-
-    color: #1a2537;
-    font-size: 30px;
-}
-
 .grid-container{
     width: 360px;
     display: grid;
     grid-template-columns: auto;
-    cursor: pointer;
+
     margin: 20px auto;
     float: left;
-
 }
-
 .grid-container:hover{
     transform: scale(1.15);
 
 }
-
 .grid-item{
     background: url("../assets/imagen.jpg");
     background-size: cover;
@@ -95,3 +92,4 @@ body{
     text-align: center;
     box-shadow: -1px 5px 19px 8px rgba(0,0,0,0.9);
 }
+
