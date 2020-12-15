@@ -1,0 +1,291 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salida de Vehiculos</title>
+
+    <link rel="stylesheet" href="{% static "styles/styleSalidaVehiculos.css" %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+</head>
+<body>
+
+    <div class="modal-dialog-scrollable">
+        <div class="col-sm-24 seccionPrincipal">
+            <div class="modal-content" >
+
+                <div class="barra-principal">
+
+                    <div class="container-barra">
+                        <h1 >SALIDA DE VEHICULOS</h1>
+                        <p class="text-right texto-usuario">Usuario: Juan Perez</p>
+                    </div>
+
+                    <button class="btn btn-primary" id="boton-cerrar-sesion"><i class="fas fa-sign-in-alt"></i>Cerrar Sesion</button>
+                </div>
+                <div class="contenido-principal">
+                    <form>
+                        <div class="form-container">
+                            <label class="h5 label-form">Placa</label>
+
+                            <div class="search-placa">
+                                <div class="col-12 text-center form-group" id="ci">
+                                    <input id="txtPlaca" type="text" class="form-control " placeholder="Ingrese numero de placa del vehiculo" name="placa"/>
+                                    <button class="btn btn-primary " id="botonBuscarPlaca"><i class="fas fa-sign-in-alt"></i>  BUSCAR </button>
+                                </div>
+                             </div>
+
+                        </div>
+                    </form>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="table-container">
+                                    <table class="table table-fixed table-sm table-border">
+                                        <thead class="table-dark">
+                                        <tr>
+                                            <th style="width: 125px" scope="col">PLACA</th>
+                                            <th style="width: 200px" scope="col">FECHA INGRESO</th>
+                                            <th style="width: 100px" scope="col">TIPO</th>
+                                            <th style="width: 125px" scope="col">INCIDENTES</th>
+                                            <th style="width: 90px" scope="col">OPCIONES</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 125px" >123-GTR</td>
+                                            <td style="width: 200px" >22-10-2020 </td>
+                                            <td style="width: 100px" >Motocicleta</td>
+                                            <td style="width: 125px" >SI</td>
+                                            <td style="width: 90px" >
+                                                <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+
+                                            </td>
+                                        </tr>
+
+
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+
+                            </div>
+                            <div class="text-center col">
+                                <div>
+                                    <label class="h3 label-form">DETALLES</label>
+
+                                </div>
+
+                                <label class="p label-form">USTED DEBE
+                                    <label class="p font-weight-bold">20</label>
+                                    Bs.</label>
+
+                                <div class="form-descuento">
+                                    <label class="h5 label-form">DESCUENTO</label>
+                                    <input type="checkbox">
+                                </div>
+
+                                <div>
+                                    <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>REGISTRAR SALIDA</button>
+
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</body>
+</html>

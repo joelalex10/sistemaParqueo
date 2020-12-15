@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Espacios</title>
+
+    <link rel="stylesheet" href="{% static "styles/styleConsultaEspacios.css" %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+</head>
+<body>
+
+<div class="modal-dialog-scrollable">
+    <div class="col-sm-24 seccionPrincipal">
+        <div class="modal-content text-center" >
+
+            <div class="barra-principal">
+
+                <div class="container-barra">
+                    <h1 >CONSULTA DE ESPACIOS</h1>
+                    <p class="text-right texto-usuario">Usuario: Juan Perez</p>
+                </div>
+
+                <button class="btn btn-primary" id="boton-cerrar-sesion"><i class="fas fa-sign-in-alt"></i>Cerrar Sesion</button>
+            </div>
+            <div class="contenido-principal">
+                <div class="row">
+                    <div class="col-6">
+
+                        <div class="table-container">
+                            <table class="table table-fixed table-sm table-border">
+                                <thead class="table-dark">
+                                <tr>
+                                    <th style="width: 75px" scope="col">SECTOR</th>
+                                    <th style="width: 125px" scope="col">POSICION</th>
+                                    <th style="width: 100px" scope="col">ESTADO</th>
+                                    <th style="width: 100px" scope="col">OPCIONES</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td style="width: 75px" >A</td>
+                                    <td style="width: 125px" >2</td>
+                                    <td style="width: 110px" >OCUPADO</td>
+                                    <td style="width: 90px" >
+                                        <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 75px" >A</td>
+                                    <td style="width: 125px" >2</td>
+                                    <td style="width: 110px" >OCUPADO</td>
+                                    <td style="width: 90px" >
+                                        <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 75px" >A</td>
+                                    <td style="width: 125px" >2</td>
+                                    <td style="width: 110px" >OCUPADO</td>
+                                    <td style="width: 90px" >
+                                        <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 75px" >A</td>
+                                    <td style="width: 125px" >2</td>
+                                    <td style="width: 110px" >OCUPADO</td>
+                                    <td style="width: 90px" >
+                                        <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 75px" >A</td>
+                                    <td style="width: 125px" >2</td>
+                                    <td style="width: 110px" >OCUPADO</td>
+                                    <td style="width: 90px" >
+                                        <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>SELECCIONAR</button>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+                        <div class="texto-consulta">
+                            <label class="p label-form">
+                                USTED HA
+                                SELECCIONADO EL
+                                LUGAR:
+                                <label class="h5 font-weight-bold label-form">A-2</label>
+                            </label>
+                            <br>
+                            <button type="submit" class="btn btn-primary " id="botonAsignar"><i class="fas fa-sign-in-alt"></i>ASIGNAR</button>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="text-right">
+                    <button type="submit" class="btn btn-primary " id="botonAtras"><i class="fas fa-sign-in-alt"></i>ATRAS</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+body{
+    background: url("../assets/imagenParqueo.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 0;
+
+}
+
+.barra-principal{
+    background: darkslategrey;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.seccionPrincipal{
+
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 50px;
+
+}
+
+.modal-content{
+    background-color: white;
+    padding: 0;
+    box-shadow: 0px 0px 2px darkslategrey;
+    alignment: center;
+
+}
+.contenido-principal{
+
+}
+.container-barra{
+    overflow: hidden;
+    margin-bottom: -20px;
+}
+.container-barra h1{
+    float: left;
+    margin-top: 10px;
+    color: white;
+}
+
+.container-barra .texto-usuario{
+    margin-right: 20px;
+    color: white;
+}
+.barra-principal #boton-cerrar-sesion{
+    cursor: pointer;
+    width: 150px;
+    background: darkred;
+    border-color: white;
+
+}
+.barra-principal #boton-cerrar-sesion:hover{
+    background: cadetblue;
+}
+
+.barra-principal #boton-cerrar-sesion{
+    margin-left: 80%;
+}
+
+.alquiler-container{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.select-tipo-vehiculo{
+    height: 40px;
+}
+.input-tiempo{
+    width: 400px;
+    height: 40px;
+    margin-left: 20px;
+}
+.combo-tipo-tiempo{
+    height: 40px;
+    width: 300px;
+}
+.buttons-action{
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+#botonIngresar{
+    margin-right: 100px;
+    width: 150px;
+}
+
+#botonIngresar{
+    margin-right: 100px;
+    width: 150px;
+}
+#botonLimpiar{
+    width: 150px;
+}
+
+.cuotas-container{
+    margin-top: 15px;
+}

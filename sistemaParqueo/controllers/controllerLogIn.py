@@ -8,7 +8,7 @@ def mostrarLogin(request):
     return render(request,"viewLogIn.html",ctx)
 
 def controlLogIn(request):
-
+    '''
     if(request.GET['username'] and request.GET['password']):
         usuario = request.GET['username']
         password = request.GET['password']
@@ -17,4 +17,13 @@ def controlLogIn(request):
     else:
         mensaje = "DEBES LLENAR SUS DATOS"
     ctx = {"mensaje":mensaje}
-    return render(request,"viewMenuPrincipal.html",ctx)
+    '''
+    usuario = request.GET['username']
+    password = request.GET['password']
+    ctx = {}
+    tipo = request.GET['tipo_usuario']
+    print("EL TIPO ES: "+tipo)
+    if(tipo=='Administrador'):
+        return render(request, "viewMenuPrincipal.html", ctx)
+    elif(tipo=='Empleado'):
+        return render(request, "viewMenuEmpleado.html", ctx)

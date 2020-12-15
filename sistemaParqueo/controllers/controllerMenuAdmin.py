@@ -21,6 +21,3 @@ def mostrarReporteCaja(request):
     ctx={}
     return render(request,"viewReporteCaja.html",ctx)
 
-def mostrarReporteAlquileres(request):
-    ctx = {}
-    return render(request, "viewReporteAlquileres.html", ctx)

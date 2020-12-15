@@ -1,0 +1,134 @@
+body{
+    background: url("../assets/imagenParqueo.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 0;
+
+}
+
+.barra-principal{
+    background: darkslategrey;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.seccionPrincipal{
+
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
+
+.modal-content{
+    background-color: white;
+    padding: 0;
+    box-shadow: 0px 0px 2px darkslategrey;
+    alignment: center;
+
+    margin-bottom: 40px;
+
+}
+.contenido-principal{
+
+}
+.container-barra{
+    overflow: hidden;
+    margin-bottom: -20px;
+}
+.container-barra h1{
+    float: left;
+    margin-top: 10px;
+    color: white;
+}
+
+.container-barra .texto-usuario{
+    margin-right: 20px;
+    color: white;
+}
+.barra-principal #boton-cerrar-sesion{
+    cursor: pointer;
+    width: 150px;
+    background: darkred;
+    border-color: white;
+
+}
+.barra-principal #boton-cerrar-sesion:hover{
+    background: cadetblue;
+}
+
+.barra-principal #boton-cerrar-sesion{
+    margin-left: 575px;
+}
+.form-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.usuario-container{
+    margin-bottom: 20px;
+}
+.label-form{
+    margin-right: 20px;
+}
+
+.buttons-action{
+    margin-left: 270px;
+}
+
+#botonIngresar{
+    width: 200px;
+    margin-bottom: 20px;
+    background: #1a2537;
+    border-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#botonIngresar:hover{
+    background: cadetblue;
+}
+
+#botonModificar{
+    width: 150px;
+    margin-bottom: 20px;
+    background: #1a2537;
+    border-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#botonModificar:hover{
+    background: cadetblue;
+}
+
+#botonLimpiar{
+    width: 150px;
+    margin-bottom: 20px;
+    background: #1a2537;
+    border-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#botonLimpiar:hover{
+    background: cadetblue;
+}
+.container-lugar{
+    overflow: hidden;
+}
+.lugar-text{
+    float: left;
+    width: 200px;
+}
+#botonAsignar{
+    width: 200px;
+    background: darkslategrey;
+    border-color: white;
+    margin-right: 10px;
+}
+#botonAsignar:hover{
+    background: cadetblue;
+}
+.tipo-vehiculo-select{
+    height: 40px;
+}

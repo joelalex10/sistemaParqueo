@@ -1,0 +1,103 @@
+body{
+    background: url("../assets/imagenParqueo.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 0;
+
+}
+
+.barra-principal{
+    background: darkslategrey;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.seccionPrincipal{
+
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 5%;
+
+}
+
+.modal-content{
+    background-color: white;
+    padding: 0;
+    box-shadow: 0px 0px 2px darkslategrey;
+    alignment: center;
+
+}
+.contenido-principal{
+
+}
+.container-barra{
+    overflow: hidden;
+    margin-bottom: -20px;
+}
+.container-barra h1{
+    float: left;
+    margin-top: 10px;
+    color: white;
+}
+
+.container-barra .texto-usuario{
+    margin-right: 20px;
+    color: white;
+}
+.barra-principal #boton-cerrar-sesion{
+    cursor: pointer;
+    width: 150px;
+    background: darkred;
+    border-color: white;
+
+}
+.barra-principal #boton-cerrar-sesion:hover{
+    background: cadetblue;
+}
+
+.barra-principal #boton-cerrar-sesion{
+    margin-left: 85%;
+}
+.input-type{
+    width: 20px;
+}
+.formulario-billetes{
+    margin-left: 20px;
+}
+.box-text{
+    border: darkslategrey;
+    border-width: 30px;
+}
+.label-monedas{
+}
+.buttons-clausura-caja{
+    margin-top: 50px;
+}
+.buttons-clausura-caja #botonConfirmar{
+    width: 200px;
+    margin-bottom: 10px;
+    background:#1a2537;
+}
+.buttons-clausura-caja #botonLimpiar{
+    width: 200px;
+
+    background:#1a2537;
+}
+
+#botonLimpiar:hover{
+    background: cadetblue;
+}
+
+#botonConfirmar:hover{
+    background: cadetblue;
+}
+
+#botonAtras{
+    width: 200px;
+    background:darkslategrey;
+}
+.efectivo-billetes{
+    margin-top: 50px;
+}

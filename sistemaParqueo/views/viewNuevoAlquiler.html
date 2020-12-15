@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion de Tarifas</title>
+    <title>Nuevo Cliente con alquiler</title>
 
-    <link rel="stylesheet" href="{% static "styles/styleNuevoUsuario.css" %}">
+    <link rel="stylesheet" href="{% static "styles/styleNuevoAlquiler.css" %}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
 </head>
@@ -14,71 +14,94 @@
 
 <div class="modal-dialog-scrollable">
     <div class="col-sm-24 seccionPrincipal">
-        <div class="modal-content text-center" >
+        <div class="modal-content" >
 
             <div class="barra-principal">
 
                 <div class="container-barra">
-                    <h1 >NUEVO USUARIO</h1>
+                    <h1 >REGISTRO DE ALQUILERES</h1>
                     <p class="text-right texto-usuario">Usuario: Juan Perez</p>
                 </div>
 
                 <button class="btn btn-primary" id="boton-cerrar-sesion"><i class="fas fa-sign-in-alt"></i>Cerrar Sesion</button>
             </div>
             <div class="contenido-principal">
-
-                <div class="usuario-container text-left">
+                <div class="alquiler-container text-left">
                     <form>
+
                         <div class="form-container">
-                            <label class="h5 label-form">Carnet de Identidad</label>
+                            <label class="h5 label-form">CI del Cliente</label>
                             <div class="col-12 text-center form-group" id="ci">
-                                <input id="txtCi" type="text" class="form-control " placeholder="Ingrese el carnet de identidad" name="username"/>
+                                <input id="txtCi" type="text" class="form-control " placeholder="Ingrese el carnet de identidad del cliente" name="username"/>
                             </div>
                         </div>
 
                         <div class="form-container">
                             <label class="h5 label-form">Nombres</label>
                             <div class="col-12 text-center form-group" id="nombres">
-                                <input id="txtNombre" type="text" class="form-control " placeholder="Ingrese el nombre completo" name="username"/>
+                                <input id="txtNombre" type="text" class="form-control " placeholder="Ingrese el nombre completo del cliente" name="username"/>
                             </div>
                         </div>
 
                         <div class="form-container">
-                            <label class="h5 label-form">Contraseña</label>
+                            <label class="h5 label-form">Marca y modelo del vehiculo</label>
                             <div class="col-12 text-center form-group" id="contrasena">
-                                <input id="txtContrasena" type="password" class="form-control " placeholder="Ingrese la contraseña" name="username"/>
+                                <input id="txtVehiculo" type="text" class="form-control " placeholder="Ingrese la marca y modelo del vehiculo" name="username"/>
                             </div>
                         </div>
 
                         <div class="form-container">
-                            <label class="h5 label-form">Confirmacion de  Contraseña</label>
+                            <label class="h5 label-form">Matricula</label>
                             <div class="col-12 text-center form-group" id="repeat-contrasena">
-                                <input id="txtRepeatContrasena" type="password" class="form-control " placeholder="Vuelva a escribir la contraseña" name="username"/>
+                                <input id="txtMatricula" type="text" class="form-control " placeholder="Ingrese el numero de matricula del vehiculo" name="username"/>
                             </div>
                         </div>
 
                         <div class="form-container">
-                            <label class="h5 label-form">Telefono</label>
-                            <div class="col-12 text-center form-group" id="usuario">
-                                <input id="txtUsuario" type="text" class="form-control " placeholder="Ingrese el telefono" name="username"/>
+                            <label class="h5 label-form">Tipo de Vehiculo</label>
+                            <div class="col-12 form-group " id="usuario">
+                                <select class="form-control select-tipo-vehiculo" name="tipo_usuario">
+                                    <option disabled="disabled" selected="selected">--SELECCIONE UN USUARIO--</option>
+                                    <option>PARTICULAR</option>
+                                    <option>MOTOCICLETA</option>
+                                </select>
                             </div>
                         </div>
+
+
+                        <div class="form-container">
+                            <label class="h5 label-form">Tiempo</label>
+                            <br>
+
+                            <input id="txtMatricula" type="text" class="input-tiempo" placeholder="Ingrese el numero de matricula del vehiculo" name="username"/>
+
+                            <select name=" tipo_tiempo" class="combo-tipo-tiempo">
+                                <option>HORAS</option>
+                                <option>DIAS</option>
+                                <option>MESES</option>
+                            </select>
+                        </div>
+
+                        <div class="form-container cuotas-container">
+                            <label class="h5 label-form">Nro de Cuotas</label>
+                            <div class="col-12 text-center form-group" id="repeat-contrasena">
+                                <input id="txtRepeatContrasena" type="number" class="form-control " placeholder="Ingrese el numero de cuotas" name="username"/>
+                            </div>
+                        </div>
+
 
                         <div class="buttons-action">
-                            <button type="submit" class="btn btn-primary " id="botonIngresar"><i class="fas fa-sign-in-alt"></i>  REGISTRAR </button>
+                            <button type="submit" class="btn btn-primary " id="botonIngresar"><i class="fas fa-sign-in-alt"></i>  AGREGAR </button>
                             <!--
                             <button type="submit" class="btn btn-primary " id="botonModificar"><i class="fas fa-sign-in-alt"></i>  MODIFICAR </button>
-
                             -->
                             <button class="btn btn-primary " id="botonLimpiar"><i class="fas fa-sign-in-alt"></i>  LIMPIAR </button>
 
                         </div>
 
-
                     </form>
 
                 </div>
-
             </div>
 
         </div>

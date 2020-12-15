@@ -1,0 +1,99 @@
+body{
+    background: url("../assets/imagenParqueo.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 0;
+
+}
+
+.barra-principal{
+    background: darkslategrey;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.seccionPrincipal{
+
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+.modal-content{
+    background-color: white;
+    padding: 0;
+    box-shadow: 0px 0px 2px darkslategrey;
+    alignment: center;
+
+}
+.contenido-principal{
+
+}
+.container-barra{
+    overflow: hidden;
+    margin-bottom: -20px;
+}
+.container-barra h1{
+    float: left;
+    margin-top: 10px;
+    color: white;
+}
+
+.container-barra .texto-usuario{
+    margin-right: 20px;
+    color: white;
+}
+.barra-principal #boton-cerrar-sesion{
+    cursor: pointer;
+    width: 150px;
+    background: darkred;
+    border-color: white;
+
+}
+.barra-principal #boton-cerrar-sesion:hover{
+    background: cadetblue;
+}
+
+.barra-principal #boton-cerrar-sesion{
+    margin-left: 85%;
+}
+.table-container{
+    margin-left: 20px;
+}
+.table-fixed tbody{
+    height: 230px;
+    overflow-y: auto;
+    width: 100%;
+}
+.table-fixed thead,
+.table-fixed tbody,
+.table-fixed td,
+.table-fixed th{
+    display: block;
+}
+
+.table-fixed tbody td,
+.table-fixed thead >tr > th{
+    float: left;
+    border-bottom-width: 0;
+}
+.table-container{
+    border: black;
+    text-align: center;
+}
+.table-title{
+    background: #1a2537;
+}
+#botonAtras{
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background: darkslategrey;
+}
+#botonAtras:hover{
+    background: cadetblue;
+}
+.texto-consulta{
+    margin-top: 50px;
+}

@@ -19,16 +19,18 @@
     <div class="modal-dialog">
         <div class="col-sm-24 seccionPrincipal">
             <div class="modal-content text-center" >
-                <form method="get" action="menuAdministrador/" method="GET ">
+                <form method="get" action="menuPrincipal/" method="GET ">
 
                     <div class="col-12 logoCato text-right">
                         <!--
                         <h5 class="text-center title">INICIO DE SESION</h5>
                         -->
+
                         <select name="tipo_usuario">
-                        {% for tipos in tipo_Usuarios %}
-                        <option>{{ tipos.tipo }}</option>
-                        {% endfor %}
+                            <option disabled="disabled" selected="selected">--SELECCIONE UN TIPO DE USUARIO--</option>
+                            {% for tipos in tipo_Usuarios %}
+                                <option>{{ tipos.tipo }}</option>
+                            {% endfor %}
                     </select>
                     </div>
 

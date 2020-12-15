@@ -20,19 +20,28 @@ http://127.0.0.1:8000/
 from django.contrib import admin
 from django.urls import path
 
-from sistemaParqueo.controllers import controllerLogIn, controllerReporteCaja
-from sistemaParqueo.controllers import controllerMenuAdmin
+from sistemaParqueo.controllers import controllerLogIn, controllerReporteCaja, \
+    controllerMenuAdmin, controllerMenuEmpleado, controllerControlAlquileres
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',controllerLogIn.mostrarLogin),
-    path('menuAdministrador/',controllerLogIn.controlLogIn),
-    path('registroCaja/',controllerReporteCaja.activarReporteCaja),
-    path('menuAdministrador/controlPersonal/', controllerMenuAdmin.mostrarControlPersonal, name="ADMcontrolPersonal"),
-    path('menuAdministrador/reporteUbicacion/', controllerMenuAdmin.mostrarReporteUbicacion, name="ADMreporteUbicacion"),
-    path('menuAdministrador/nuevoUsuario/', controllerMenuAdmin.mostrarNuevoUsuario,name="ADMnuevoUsuario"),
-    path('menuAdministrador/gestionTarifas/', controllerMenuAdmin.mostrarGestionTarifas, name="ADMgestionTarifas"),
-    path('menuAdministrador/reporteCaja/', controllerMenuAdmin.mostrarReporteCaja, name="ADMreporteCaja"),
-    path('menuAdministrador/reporteAlquileres/', controllerMenuAdmin.mostrarReporteAlquileres, name="ADMreporteAlquileres"),
+    path('menuPrincipal/',controllerLogIn.controlLogIn),
 
+    path('menuPrincipal/controlPersonal/', controllerMenuAdmin.mostrarControlPersonal, name="ADMcontrolPersonal"),
+    path('menuPrincipal/reporteUbicacion/', controllerMenuAdmin.mostrarReporteUbicacion, name="ADMreporteUbicacion"),
+    path('menuPrincipal/nuevoUsuario/', controllerMenuAdmin.mostrarNuevoUsuario,name="ADMnuevoUsuario"),
+    path('menuPrincipal/gestionTarifas/', controllerMenuAdmin.mostrarGestionTarifas, name="ADMgestionTarifas"),
+    path('menuPrincipal/reporteCaja/', controllerMenuAdmin.mostrarReporteCaja, name="ADMreporteCaja"),
+
+    path('menuPrincipal/ingresoVehiculos/', controllerMenuEmpleado.mostrarIngresoVehiculos, name="EMPIngresoVehiculos"),
+    path('menuPrincipal/ingresoVehiculos/', controllerMenuEmpleado.mostrarIngresoVehiculos, name="EMPIngresoVehiculos"),
+
+    path('menuPrincipal/aperturaCaja/', controllerMenuEmpleado.mostrarAperturaCaja, name="EMPAperturaCaja"),
+    path('menuPrincipal/salidaVehiculos/', controllerMenuEmpleado.mostrarSalidaVehiculos, name="EMPSalidaVehiculos"),
+    path('menuPrincipal/clausuraCaja/', controllerMenuEmpleado.mostrarClausuraCaja, name="EMPClausuraCaja"),
+    path('menuPrincipal/consultaEspacios/', controllerMenuEmpleado.mostrarConsultaEspacios, name="EMPconsultaEspacios"),
+    path('menuPrincipal/reporteAlquileres/', controllerMenuEmpleado.mostrarReporteAlquileres, name="ADMreporteAlquileres"),
+    path('menuPrincipal/reporteAlquileres/nuevoAlquiler',controllerControlAlquileres.mostrarRegistroAlquiler, name='EMPnuevoAlquiler'),
 ]
